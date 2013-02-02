@@ -93,7 +93,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+#international_room {
+    position: relative;
+    float: left;
+    width: 80%;
+    height: 720px;
+    margin: 0;
+    overflow: hidden;
+    cursor: e-resize;
+}
 
 
 
