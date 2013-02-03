@@ -93,7 +93,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#international_room {
+#big_room, #international_room, #music_room, #slavic_room{
     position: relative;
     float: left;
     width: 80%;
@@ -103,6 +103,28 @@ textarea {
     cursor: e-resize;
 }
 
+#divider{
+    height: 1500px;
+    display: block;
+
+}
+
+#nav {
+    float: left;
+    width: 300px;
+    position:fixed;
+    z-index: 10;
+}
+
+#nav ul {
+
+}
+
+#content {
+    float: left;
+    width: 90%;
+    margin-left: 300px;
+}
 
 
 
