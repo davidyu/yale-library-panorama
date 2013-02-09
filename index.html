@@ -14,55 +14,50 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/typo.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/mootoolsPacked.js"></script>
-        <script src="js/mooscrollbase.js"></script>
-        <script src="js/panoramaPacked.js"></script>
         <script type="text/javascript">
-        var international_room;
-        window.addEvent('domready', function(){
-            new SmoothScroll({ duration: 700 });
-            big_room = new Panorama('img/big_room.jpg', 'big_room', {top: 0, left:0});
-            international_room = new Panorama('img/international_room.jpg', 'international_room', {top: 0, left: 0});
-            music_room = new Panorama('img/music_room.jpg', 'music_room', {top: 0, left:0});
-            slavic_room = new Panorama('img/slavic_room.jpg', 'slavic_room', {top: 0, left:0});
-            
-        });
         </script>
 
     </head>
-    <body>
+    <body class="bulldogs">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <p></p>
+        <div id="wrap">
+            <div id="main" role="main" class="container">
 
-        <div id="nav">
-            <ul>
-                <li><a href="#floor1">Floor 1</a></li>
-                <li><a href="#floor2">Floor 2</a></li>
-                <li><a href="#floor3">Floor 3</a></li>
-            </ul>
-        </div>
-        <div id="content">
-            <a title="floor1" name="floor1" id="floor1"></a>
-            <h3>Big Room</h3>
-            <div id="big_room"></div>
-            <div id="divider"></div>
+                <section id="splash">
+                    <img src="img/sterling.jpg" width="940" height="655">
+                </section>
 
-            <h3>International Room</h3>
-            <div id="international_room"></div>
-            <div id="divider"></div>
+                <br/>
+                <h1 class="blurb serif">Sterling Memorial Library is the largest library at Yale University. Home to more than 4 million volumes, the Library consists of 15 levels, each with its own distinct flavor and category of books.</h1>
+                <br/>
 
-            <h3>Music Library</h3>
-            <div id="music_room"></div>
-            <div id="divider"></div>
-            
-            <a title="floor2" name="floor2" id="floor2"></a>
-            <h3>Sterling Slavic Room</h3>
-            <div id="slavic_room"></div>
+                <div id="content">
+                    <a title="floor1" name="floor1" id="floor1"></a>
+                    <h3>Big Room</h3>
+
+                    <div id="big_room"></div>
+                    <div id="divider"></div>
+
+                    <h3>International Room</h3>
+                    <div id="international_room"></div>
+                    <div id="divider"></div>
+
+                    <h3>Music Library</h3>
+                    <div id="music_room"></div>
+                    <div id="divider"></div>
+                    
+                    <a title="floor2" name="floor2" id="floor2"></a>
+                    <h3>Sterling Slavic Room</h3>
+                    <div id="slavic_room"></div>
+                </div>
+            </div>
         </div>
 
         <script src="js/plugins.js"></script>
@@ -70,13 +65,13 @@
     
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--
+        
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-38369106-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-    -->
+
     </body>
 </html>
