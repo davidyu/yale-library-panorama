@@ -101,6 +101,12 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+a {
+    color: #0f4d92;
+    text-decoration: none;
+}
+
 #big_room, #international_room, #music_room, #slavic_room{
     position: relative;
     width: 80%;
@@ -209,13 +215,24 @@ section#splash {
 
 section#images {
     margin-top: 30px;
+    padding-bottom: 60px;
 }
 
-#blurb-container {
-    background: transparent;
-    border-width: 0;
-    box-shadow: none;
+footer {
+    width:960px;
+    margin: 0 auto;
+    font-size: 12px;
+    background-color: transparent;
+    border-top: 1px solid #0f4d92;
+    color:#434445;
+    padding: 20px 0;
 }
+
+#attribution,
+footer p {
+    font: 11px Verdana,Arial,Helvetica,sans-serif;
+}
+
 
 #action::before {
     width: 422px;
@@ -240,6 +257,12 @@ section#images {
 /* nice padding space */
 #action li a:first-child {
     margin-bottom: 8px;
+}
+
+#blurb-container {
+    background: transparent;
+    border-width: 0;
+    box-shadow: none;
 }
 
 /* beautiful "shiny gradient" from Sproutcore's main page */
@@ -269,6 +292,8 @@ a.button .arrow {
     margin: 0;
 }
 
+
+
 .button {
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -284,10 +309,33 @@ a.button .arrow {
     text-transform: uppercase;
 }
 
+.image-container {
+    margin: 3px 3px 0 0;
+    display: block;
+    width: 200px;
+    height: 300px;
+    float: left;
+    text-transform: uppercase;
+    text-align: left;
+}
+
 .subtext {
     display: block;
     font-size: 12px;
     padding: 0 0 3px 28px;
+}
+
+.thumb {
+    height: 280px;
+}
+
+.thumb-room {
+    font: 12px Arial, Helvetica, sans-serif;
+}
+
+.thumb-floor {
+    font: 11px Arial, Helvetica, sans-serif;
+    color: #434445;
 }
 
 .yalelink {
