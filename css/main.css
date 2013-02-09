@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #FAFAFA;
+    color: #000;
 }
 
 body {
@@ -238,7 +238,7 @@ section#images {
 }
 
 /* nice padding space */
-#action li:first-child {
+#action li a:first-child {
     margin-bottom: 8px;
 }
 
@@ -277,6 +277,7 @@ a.button .arrow {
     border-radius: 4px;
     text-shadow: rgba(255,255,255,0.3) 0 1px 0;
     display: inline-block;
+    border-color: rgba(0,0,0,0.75);
     border-width: 1px;
     border-style: solid;
     font-weight: bold;
@@ -291,6 +292,16 @@ a.button .arrow {
 
 .yalelink {
     font-size: 12px;
+}
+
+.ninety {
+    display: block;
+    position: absolute;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
 }
 
 
