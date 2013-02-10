@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Inside Sterling Memorial Library</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -14,71 +14,166 @@
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/typo.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-        <script src="js/mootoolsPacked.js"></script>
-        <script src="js/PanoramaPacked.js"></script>
-
-        <script type="text/javascript">
-            var international_room;
-            window.addEvent('domready', function(){
-                
-                big_room = new Panorama('img/big_room.jpg', 'big_room', {top: 0, left:0});
-                international_room = new Panorama('img/international_room.jpg', 'international_room', {top: 0, left: 0});
-                music_room = new Panorama('img/music_room.jpg', 'music_room', {top: 0, left:0});
-                slavic_room = new Panorama('img/slavic_room.jpg', 'slavic_room', {top: 0, left:0});
-                
-            });
-        </script>
 
     </head>
-    <body>
+    <body class="bulldogs">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
         <p></p>
+        <div id="wrap">
+            <div id="main" role="main" class="container">
+                <section id="splash">
+                    <img src="img/sterling.jpg" style="overflow:hidden" width="875" height="467">
+                </section>
 
-        <div id="nav">
-            <ul>
-                <li><a href="#floor1">Floor 1</a></li>
-                <li><a href="#floor2">Floor 2</a></li>
-                <li><a href="#floor3">Floor 3</a></li>
-            </ul>
+                <br/>
+
+                <div id="blurb-container">
+
+                <p class="blurb serif">Sterling Memorial Library is the largest library at Yale University. Home to more than 4 million volumes, the Library consists of 15 levels, each with its own distinct flavor and category of books.</p>
+
+                <ul id="action">
+                    <li>
+                        <a class="button primary" href="#images">
+                            <span class="arrow">⬇</span><span class="explore">Explore</span>
+                            <span class="subtext">Sterling Memorial Library</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="button primary" href="#interior">
+                            <span>➡</span> <span class="yalelink">Yale University Library</span>
+                        </a>
+                    </li>
+                </ul>
+
+                </div>
+
+                <a title="interior" name="interior" id="interior"></a>
+                <section id="images">
+
+                    <div style="width:850px; margin:0px auto"> <!--center everything -->
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/lobby_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Sterling Main Lobby</div>
+                            <div class="thumb-floor">Floor 1</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/international_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">International Room</div>
+                            <div class="thumb-floor">Floor 1</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/starr_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Starr Main Reference Room</div>
+                            <div class="thumb-floor">Floor 1</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/music_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Irving S. Gilmore Library</div>
+                            <div class="thumb-floor">Floor 1</div>
+                        </div>
+
+                        <br/>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/eastasia_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">East Asia Study Room</div>
+                            <div class="thumb-floor">Floor 2</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/southeastasia_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Southeast Asia Study Room</div>
+                            <div class="thumb-floor">Floor 3</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/slavic_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Slavic Room</div>
+                            <div class="thumb-floor">Floor 4</div>
+                        </div>
+
+                        <br style="clear:both">
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/arabic_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Arabic Room</div>
+                            <div class="thumb-floor">Floor 5</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/amstudies_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">American Studies Room</div>
+                            <div class="thumb-floor">Floor 6</div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="thumb">
+                                <img src="img/philosophy_thumb.jpg">
+                            </div>
+                            <div class="thumb-room">Philosophy Room</div>
+                            <div class="thumb-floor">Floor 6</div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <footer>
+            <div class="container">
+                <center>
+                    <p id="attribution">Copyright © 2013, Yale University. All rights reserved.<br/>
+                        Photography by Andrew Leu. Web site by Lewen Yu. </p><br/>
+                    <p>
+                        <a href="http://www.yale.edu/privacy">privacy policy</a> | 
+                        <a href="http://portal.yale.edu">yale portal</a> |
+                        <a href="http://communications.yale.edu/contact-us">contact opac</a></span>
+                    </p>
+                </center>
+            </div>
+        </footer>
         </div>
-        <div id="content">
-            <a title="floor1" name="floor1" id="floor1"></a>
-            <h3>Big Room</h3>
-            <div id="big_room"></div>
-            <div id="divider"></div>
-
-            <h3>International Room</h3>
-            <div id="international_room"></div>
-            <div id="divider"></div>
-
-            <h3>Music Library</h3>
-            <div id="music_room"></div>
-            <div id="divider"></div>
-            
-            <a title="floor2" name="floor2" id="floor2"></a>
-            <h3>Sterling Slavic Room</h3>
-            <div id="slavic_room"></div>
-
-            <div id="divider"></div>
-        </div>
+        
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
     
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <!--
+        
         <script>
-            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            var _gaq=[['_setAccount','UA-38369106-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
-    -->
+
     </body>
 </html>
