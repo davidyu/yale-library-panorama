@@ -207,9 +207,10 @@ p.blurb {
 }
 
 .title{
-    font-family: Palatino, “Palatino Linotype”, “Hoefler Text”, Times, “Times New Roman”, serif;
+    font-family: “Hoefler Text”, Palatino, “Palatino Linotype”,  Times, “Times New Roman”, serif;
+    font-variant: small-caps;
     font-size:56px;
-    font-weight: lighter;
+    font-weight: normal;
     text-align: center;
 }
 
@@ -218,12 +219,14 @@ p.title {
 }
 
 /* use invisible anchor to create more whitespace */
-#interior {
+a#interior {
+    display:block;
     margin-top:52px;
 }
 
 .instructions {
-    font-family: Palatino, “Palatino Linotype”, “Hoefler Text”, Times, “Times New Roman”, serif;
+    font-family: “Hoefler Text”, Palatino, “Palatino Linotype”,  Times, “Times New Roman”, serif;
+    font-style: italic;
     color: #666666;
     font-size: 24px;
     text-align: center;
