@@ -202,8 +202,20 @@ ol, ul {
     font-style: italic;
 }
 
-p.blurb {
+.blurb-title {
+    font-family: “Hoefler Text”, Palatino, “Palatino Linotype”,  Times, “Times New Roman”, serif;
+    font-variant: small-caps;
+    font-size:30px;
+    font-weight: normal;
+    width: 580px;
+    float: left;
+    text-align: center;
+}
 
+hr.blurb {
+    width: 580px;
+    margin: 0 !important;
+    float: left;
 }
 
 .title{

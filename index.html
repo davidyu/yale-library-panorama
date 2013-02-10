@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/typo.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+        <script src="js/jquery.scrollTo.js"></script>
 
     </head>
     <body class="bulldogs">
@@ -27,6 +29,7 @@
         <p></p>
         <div id="wrap">
             <div id="main" role="main" class="container">
+
                 <section id="splash">
                     <img src="img/sterling.jpg" style="overflow:hidden" width="875" height="467">
                 </section>
@@ -35,11 +38,13 @@
 
                 <div id="blurb-container">
 
+                <p class="blurb-title">Sterling Memorial Library</p>
+                <hr class="blurb"/>
                 <p class="blurb serif">Sterling Memorial Library is the largest library at Yale University. Home to more than 4 million volumes, the Library consists of 15 levels, each with its own distinct flavor and category of books.</p>
 
                 <ul id="action">
                     <li>
-                        <a class="button primary" href="#interior">
+                        <a class="button primary" href="#interiors" onclick="$.scrollTo($('#interior'), 500);">
                             <span class="arrow">⬇</span><span class="explore">Explore</span>
                             <span class="subtext">Sterling Memorial Library</span>
                         </a>
@@ -66,88 +71,110 @@
 
                     <div style="width:845px; margin:0px auto; padding-left:5px; padding-top:20px"> <!--center everything -->
 
+                        
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/lobby_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Sterling Main Lobby</div>
-                            <div class="thumb-floor">Floor 1</div>
+                            <a href="img/lobby.jpg">
+                                <div class="thumb">
+                                    <img src="img/lobby_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Sterling Main Lobby</div>
+                                <div class="thumb-floor">Floor 1</div>
+                            </a>
+                        </div>
+                        
+
+                        <div class="image-container">
+                            <a href="img/international.jpg">
+                                <div class="thumb">
+                                    <img src="img/international_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">International Room</div>
+                                <div class="thumb-floor">Floor 1</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/international_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">International Room</div>
-                            <div class="thumb-floor">Floor 1</div>
+                            <a href="img/starr.jpg">
+                                <div class="thumb">
+                                    <img src="img/starr_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Starr Main Reference Room</div>
+                                <div class="thumb-floor">Floor 1</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/starr_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Starr Main Reference Room</div>
-                            <div class="thumb-floor">Floor 1</div>
-                        </div>
-
-                        <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/music_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Irving S. Gilmore Library</div>
-                            <div class="thumb-floor">Floor 1</div>
+                            <a href="img/music.jpg">
+                                <div class="thumb">
+                                    <img src="img/music_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Irving S. Gilmore Library</div>
+                                <div class="thumb-floor">Floor 1</div>
+                            </a>
                         </div>
 
                         <br/>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/eastasia_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">East Asia Study Room</div>
-                            <div class="thumb-floor">Floor 2</div>
+                            <a href="img/eastasia.jpg">
+                                <div class="thumb">
+                                    <img src="img/eastasia_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">East Asia Study Room</div>
+                                <div class="thumb-floor">Floor 2</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/southeastasia_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Southeast Asia Study Room</div>
-                            <div class="thumb-floor">Floor 3</div>
+                            <a href="img/southeastasia.jpg">
+                                <div class="thumb">
+                                    <img src="img/southeastasia_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Southeast Asia Study Room</div>
+                                <div class="thumb-floor">Floor 3</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/slavic_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Slavic Room</div>
-                            <div class="thumb-floor">Floor 4</div>
+                            <a href="img/slavic.jpg">
+                                <div class="thumb">
+                                    <img src="img/slavic_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Slavic Room</div>
+                                <div class="thumb-floor">Floor 4</div>
+                            </a>
                         </div>
 
                         <br style="clear:both">
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/arabic_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Arabic Room</div>
-                            <div class="thumb-floor">Floor 5</div>
+                            <a href="img/arabic.jpg">
+                                <div class="thumb">
+                                    <img src="img/arabic_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Arabic Room</div>
+                                <div class="thumb-floor">Floor 5</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/amstudies_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">American Studies Room</div>
-                            <div class="thumb-floor">Floor 6</div>
+                            <a href="img/amstudies.jpg">
+                                <div class="thumb">
+                                    <img src="img/amstudies_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">American Studies Room</div>
+                                <div class="thumb-floor">Floor 6</div>
+                            </a>
                         </div>
 
                         <div class="image-container">
-                            <div class="thumb">
-                                <img src="img/philosophy_thumb.jpg">
-                            </div>
-                            <div class="thumb-room">Philosophy Room</div>
-                            <div class="thumb-floor">Floor 6</div>
+                            <a href="img/philosophy.jpg">
+                                <div class="thumb">
+                                    <img src="img/philosophy_thumb.jpg">
+                                </div>
+                                <div class="thumb-room">Philosophy Room</div>
+                                <div class="thumb-floor">Floor 6</div>
+                            </a>
                         </div>
 
                     </div>
