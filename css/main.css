@@ -219,9 +219,10 @@ p.title {
 }
 
 /* use invisible anchor to create more whitespace */
-a#interior {
+div.vspace {
     display:block;
     margin-top:52px;
+    visibility: hidden;
 }
 
 .instructions {
@@ -276,7 +277,7 @@ footer {
     margin: 0 auto;
     font-size: 12px;
     background-color: transparent;
-    border-top: 1px solid #0f4d92;
+    border-top: 1px solid #ccc;
     color:#434445;
     padding: 20px 0;
 }
@@ -318,7 +319,7 @@ footer p {
     box-shadow: none;
 }
 
-/* beautiful "shiny gradient" from Sproutcore's main page */
+/* beautiful "shiny gradient" from Sproutcore: http://www.sproutcore.com; */
 a.button.primary {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.3)), color-stop(50%, rgba(255,255,255,0.22)), color-stop(50%, rgba(255,255,255,0.12)), color-stop(100%, rgba(255,255,255,0)));
     background: -webkit-linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
@@ -363,10 +364,10 @@ a.button .arrow {
 }
 
 .image-container {
-    margin: 3px 3px 0 0;
+    margin: 10px 10px 0 0;
     display: block;
     width: 200px;
-    height: 300px;
+    height: 310px;
     float: left;
     text-transform: uppercase;
     text-align: left;
