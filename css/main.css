@@ -190,18 +190,17 @@ ol, ul {
     height: 100%;
 }
 
-.mini-title {
-    font-variant: small-caps;
-    font-size:40px !important;
-    font-weight: normal;
-    width: 580px;
-    float: left;
-    text-align: center;
+/*unused*/
+.blurb-title {
+    display: block;
+    margin-left:55px; /* shifted by hand; centering with text is hard! */
+    margin-right:auto;
+    padding: 0;
 }
 
 .blurb {
     text-shadow: rgba(255,255,255,0.2) 0 1px 0;
-    width: 580px;
+    width: 610px;
     float: left;
     margin-bottom: 44px;
     color: #666666;
@@ -213,16 +212,16 @@ ol, ul {
 
 hr.blurb {
     margin-bottom: 20px !important;
-    width: 580px;
+    margin-top: 0px; /* compensate for blurb title vspace */
+    width: 605px;
     float: left;
 }
 
 .title{
-    font-family: “Hoefler Text”, Palatino, “Palatino Linotype”,  Times, “Times New Roman”, serif;
-    font-variant: small-caps;
-    font-size:54px;
-    font-weight: normal;
-    text-align: center;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 0;
 }
 
 p.title {
@@ -230,9 +229,8 @@ p.title {
 }
 
 /* use invisible anchor to create more whitespace */
-div.vspace {
+.vspace {
     display:block;
-    margin-top:52px;
     visibility: hidden;
 }
 
@@ -322,7 +320,7 @@ footer p {
     background: transparent;
     border-width: 0;
     box-shadow: none;
-    width: 600px !important;
+    width: 640px !important;
     float:left;
 }
 
