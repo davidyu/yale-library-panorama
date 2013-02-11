@@ -457,7 +457,11 @@ footer p {
 .image-container:hover {
     box-shadow: 0 0 40px rgba(20,139,233, 0.3);
     -webkit-box-shadow: 0 0 40px rgba(20,139,233, 0.3);
-    -moz-box-shadow: 0 0 40px rgba(116,217,244, 0.3);
+    -moz-box-shadow: 0 0 40px rgba(20,139,233, 0.3);
+}
+
+.image-container:hover .thumb {
+    opacity: 1;
 }
 
 .explore {
@@ -473,6 +477,7 @@ footer p {
 }
 
 .thumb {
+    opacity: 0.85;
     height: 280px;
 }
 
