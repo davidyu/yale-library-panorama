@@ -407,12 +407,12 @@ footer p {
     width: 197px;
 }
 
-.button.blue {
-    background-color: #00ADEE;
+.button.large {
+    background-color: #148BE9;
 }
 
-.button.grey {
-    background-color: #666666;
+.button.small {
+    background-color: #46A198;
 }
 
 .button .arrow {
@@ -422,11 +422,11 @@ footer p {
     float:left;
 }
 
-.button.blue .arrow {
+.button.large .arrow {
     padding-top: 5px; /* hand-adjusted to line up */
 }
 
-.button.grey .arrow {
+.button.small .arrow {
     margin-top: -5px; /* hand-adjusted to line up */   
 }
 
