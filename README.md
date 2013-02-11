@@ -1,4 +1,4 @@
 yale-library-panorama
 =====================
 
-static panorama viewer
+see desktop.github.com/yale-library-panorama
