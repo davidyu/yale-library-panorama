@@ -21,11 +21,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-<<<<<<< HEAD
     background-color: #A1A3A6;
-=======
     min-width: 970px;
->>>>>>> master
 }
 
 /*
@@ -324,48 +321,113 @@ footer p {
     float:left;
 }
 
-/* beautiful "shiny gradient" from Sproutcore: http://www.sproutcore.com; */
-a.button.primary {
-    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255,255,255,0.3)), color-stop(50%, rgba(255,255,255,0.22)), color-stop(50%, rgba(255,255,255,0.12)), color-stop(100%, rgba(255,255,255,0)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
-    background: -o-linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
-    background: -ms-linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
-    background: linear-gradient(top, rgba(255,255,255,0.3),rgba(255,255,255,0.22) 50%,rgba(255,255,255,0.12) 50%,rgba(255,255,255,0));
+.button {
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    font-family: "Helvetica", sans-serif;
+    text-transform: uppercase;
+}
+
+.button span {
+
+}
+
+.button {
+    position:relative;
+    outline: none;
+    overflow: visible; /* removes extra side padding in IE */
+    cursor: pointer;
+    border: 1px solid #999;/* IE */
+    border: rgba(0, 0, 0, .2) 1px solid;/* Saf4+, Chrome, FF3.6 */
+    border-bottom:rgba(0, 0, 0, .4) 1px solid;
     -webkit-box-shadow: rgba(0,0,0,0.2) 0 0 6px,rgba(255,255,255,0.4) 0 1px 0 inset;
     -moz-box-shadow: rgba(0,0,0,0.2) 0 0 6px,rgba(255,255,255,0.4) 0 1px 0 inset;
     box-shadow: rgba(0,0,0,0.2) 0 0 6px,rgba(255,255,255,0.4) 0 1px 0 inset;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-    padding: 17px 25px;
-    color: rgba(0,0,0,0.75);
-    font-size: 27px;
+    background: -moz-linear-gradient(
+        center top,
+        rgba(255, 255, 255, .1) 0%,
+        rgba(0, 0, 0, .1) 100%
+    );/* FF3.6 */
+    background: -webkit-gradient(
+        linear,
+        center bottom,
+        center top,
+        from(rgba(0, 0, 0, .1)),
+        to(rgba(255, 255, 255, .1))
+    );/* Saf4+, Chrome */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#19FFFFFF', EndColorStr='#19000000')"; /* IE8 */
+    -moz-user-select: none;
+    -webkit-user-select:none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-bottom:10px;
+
+
 }
 
-a.button .arrow {
+.button.full, .button.full span {
+    display: block;
+}
+
+.button:hover, .button.hover {
+    background: -moz-linear-gradient(
+        center top,
+        rgba(255, 255, 255, .2) 0%,
+        rgba(255, 255, 255, .1) 100%
+    );/* FF3.6 */
+    background: -webkit-gradient(
+        linear,
+        center bottom,
+        center top,
+        from(rgba(255, 255, 255, .1)),
+        to(rgba(255, 255, 255, .2))
+    );/* Saf4+, Chrome */
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF'); /* IE6,IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#33FFFFFF', EndColorStr='#19FFFFFF')"; /* IE8 */
+}
+
+.button:active, .button.active {
+    top:1px;
+}
+
+.button span {
+    position: relative;
+    color:#fff;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.25);
+    border-top: rgba(255, 255, 255, .2) 1px solid;
+    text-decoration:none;
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    padding: 17px 25px;
+    width: 197px;
+}
+
+.button.blue {
+    background-color: #00ADEE;
+}
+
+.button.grey {
+    background-color: #666666;
+}
+
+.button .arrow {
     font-size:20px;
     padding-right: 5px;
     margin: 0;
+    float:left;
 }
 
+.button.blue .arrow {
+    padding-top: 5px; /* hand-adjusted to line up */
+}
 
-
-.button {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    text-shadow: rgba(255,255,255,0.3) 0 1px 0;
-    display: inline-block;
-    border-color: rgba(0,0,0,0.75);
-    border-width: 1px;
-    border-style: solid;
-    font-weight: bold;
-    text-transform: uppercase;
+.button.grey .arrow {
+    margin-top: -5px; /* hand-adjusted to line up */   
 }
 
 .image-container {
@@ -376,6 +438,12 @@ a.button .arrow {
     float: left;
     text-transform: uppercase;
     text-align: left;
+}
+
+.explore {
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 37px;
 }
 
 .subtext {
