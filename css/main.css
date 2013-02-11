@@ -282,6 +282,8 @@ section#splash {
 section#images {
     margin-top: 30px;
     padding-bottom: 60px;
+    background: transparent !important;
+    border: 0;
 }
 
 footer {
@@ -437,13 +439,25 @@ footer p {
 }
 
 .image-container {
-    margin: 10px 10px 0 0;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 18px 18px 0 0;
     display: block;
     width: 200px;
     height: 310px;
     float: left;
     text-transform: uppercase;
     text-align: left;
+    border: 1px solid rgba(0,0,0,0.4);
+    background-color: #fff;
+}
+
+.image-container:hover {
+    box-shadow: 0 0 40px rgba(20,139,233, 0.3);
+    -webkit-box-shadow: 0 0 40px rgba(20,139,233, 0.3);
+    -moz-box-shadow: 0 0 40px rgba(116,217,244, 0.3);
 }
 
 .explore {
@@ -463,6 +477,7 @@ footer p {
 }
 
 .thumb-room {
+    margin-top: 4px;
     font: 12px Arial, Helvetica, sans-serif;
 }
 
@@ -473,16 +488,6 @@ footer p {
 
 .yalelink {
     font-size: 12px;
-}
-
-.ninety {
-    display: block;
-    position: absolute;
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    transform: rotate(-90deg);
 }
 
 
