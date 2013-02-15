@@ -42,6 +42,7 @@
 
                 var p = $("#panorama");
 
+                //translate vertical scrolling to horizontal scrolling
                 $("#panorama-container").mousewheel(function(event, delta) {
                     this.scrollLeft -= (delta * 30);
                     event.preventDefault();
@@ -58,6 +59,23 @@
                 $("#amstudies-thumb").click( function() { p.attr("src", "img/amstudies.jpg"); } );
                 $("#philosophy-thumb").click( function() { p.attr("src", "img/philosophy.jpg"); } );
 
+                //from http://javascript.jstruebig.de/javascript/70
+                function scrollbarWidth() {
+                 
+                    document.body.style.overflow = 'hidden';
+                    var width = document.body.clientWidth;
+                 
+                    document.body.style.overflow = 'scroll';
+                    width -= document.body.clientWidth;
+                 
+                    // Der IE im Standardmode
+                    if(!width) width = document.body.offsetWidth-document.body.clientWidth;
+                 
+                    document.body.style.overflow = '';
+                    return width;
+                }
+
+                $("#panorama-container").css("height", 640+scrollbarWidth()+"px"); //adjust height based on browser/user setting
             });
         </script>
 
@@ -67,7 +85,6 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- Add your site or application content here -->
         <p></p>
         <div id="wrap">
             <div id="main" role="main" class="container">
@@ -90,7 +107,7 @@
                     <li>
                         <a class="button large" href="#interiors" onclick="$.scrollTo($('#interior'), 1000, {easing:'easeOutQuad'});">
                             <span>
-                            <div class="arrow">⬇</div><div class="explore">Explore</div>
+                            <div class="arrow">⇣</div><div class="explore">Explore</div>
                             <div class="subtext">Inside the Library</div>
                             </span>
                         </a>
@@ -98,7 +115,7 @@
                     <li>
                         <a class="button small" href="http://www.library.yale.edu/">
                             <span>
-                                <div class="arrow">➡</div> <div class="yalelink">Yale University Library</div>
+                                <div class="arrow">&rarr;</div> <div class="yalelink">Yale University Library</div>
                             </span>
                         </a>
                     </li>
@@ -120,7 +137,7 @@
                     <div style="display:block; width: 720px; margin: 0px auto;">
                         
                         <div class="image-container">
-                            <a id="lobby-thumb" class="fancybox" href="#panorama-container" caption="Sterling Main Lobby. Floor 1. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="lobby-thumb" class="fancybox" href="#panorama-container" caption="Sterling Main Lobby. Floor 1. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/lobby_thumb.jpg">
                                 </div>
@@ -131,7 +148,7 @@
                         
 
                         <div class="image-container">
-                            <a id="international-thumb" class="fancybox" href="#panorama-container" caption="International Room. Floor 1. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="international-thumb" class="fancybox" href="#panorama-container" caption="International Room. Floor 1. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/international_thumb.jpg">
                                 </div>
@@ -141,7 +158,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="starr-thumb" class="fancybox" href="#panorama-container" caption="Starr Main Reference Room. Floor 1. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="starr-thumb" class="fancybox" href="#panorama-container" caption="Starr Main Reference Room. Floor 1. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/starr_thumb.jpg">
                                 </div>
@@ -151,7 +168,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="music-thumb" class="fancybox" href="#panorama-container" caption="Irving S. Gilmore Library. Floor 1. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="music-thumb" class="fancybox" href="#panorama-container" caption="Irving S. Gilmore Library. Floor 1. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/music_thumb.jpg">
                                 </div>
@@ -161,7 +178,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="eastasia-thumb" class="fancybox" href="#panorama-container" caption="East Asia Study Room. Floor 2. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="eastasia-thumb" class="fancybox" href="#panorama-container" caption="East Asia Study Room. Floor 2. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/eastasia_thumb.jpg">
                                 </div>
@@ -171,7 +188,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="southeastasia-thumb" class="fancybox" href="#panorama-container" caption="Southeast Asia Study Room. Floor 3. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="southeastasia-thumb" class="fancybox" href="#panorama-container" caption="Southeast Asia Study Room. Floor 3. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/southeastasia_thumb.jpg">
                                 </div>
@@ -181,7 +198,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="slavic-thumb" class="fancybox" href="#panorama-container" caption="Slavic Room. Floor 4. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="slavic-thumb" class="fancybox" href="#panorama-container" caption="Slavic Room. Floor 4. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/slavic_thumb.jpg">
                                 </div>
@@ -191,7 +208,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="arabic-thumb" class="fancybox" href="#panorama-container" caption="Arabic Room. Floor 5. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="arabic-thumb" class="fancybox" href="#panorama-container" caption="Arabic Room. Floor 5. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/arabic_thumb.jpg">
                                 </div>
@@ -201,7 +218,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="amstudies-thumb" class="fancybox" href="#panorama-container" caption="American Studies Room. Floor 6. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="amstudies-thumb" class="fancybox" href="#panorama-container" caption="American Studies Room. Floor 6. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/amstudies_thumb.jpg">
                                 </div>
@@ -211,7 +228,7 @@
                         </div>
 
                         <div class="image-container">
-                            <a id="philosophy-thumb" class="fancybox" href="#panorama-container" caption="Philosophy Room. Floor 6. ⬆ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
+                            <a id="philosophy-thumb" class="fancybox" href="#panorama-container" caption="Philosophy Room. Floor 6. ↔ Scroll to move around. Click the 'x' (top-right) or anywhere outside the white box to close.">
                                 <div class="thumb">
                                     <img src="img/philosophy_thumb.jpg">
                                 </div>
@@ -250,9 +267,8 @@
 
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-    
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics -->
         
         <script>
             var _gaq=[['_setAccount','UA-38369106-1'],['_trackPageview']];
