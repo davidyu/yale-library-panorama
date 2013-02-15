@@ -225,6 +225,22 @@ p.title {
     margin-top:20px;
 }
 
+p#top-attribution {
+    font-family: “Hoefler Text”, Palatino, “Palatino Linotype”,  Times, “Times New Roman”, serif;
+    font-style: italic;
+    color: #666666;
+    font-size: 12px;
+    text-align: right;
+    display: block;
+    width: 875px;
+    margin: 0 auto;
+}
+
+#top-attribution a,
+#attribution a {
+    text-decoration: underline;
+}
+
 /* use invisible anchor to create more whitespace */
 .vspace {
     display:block;
@@ -372,8 +388,6 @@ footer p {
     -khtml-user-select: none;
     user-select: none;
     margin-bottom:10px;
-
-
 }
 
 .button.full, .button.full span {
